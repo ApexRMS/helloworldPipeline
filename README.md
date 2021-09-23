@@ -1,0 +1,3 @@
+# helloworldPipeline
+
+The helloworldPipeline package is part of the <a href="https://github.com/ApexRMS/helloworldEnhanced" target="_blank">helloworldEnhanced Package suite</a>, and was designed as a basic example of how to use model pipelines in a custom <a href="https://syncrosim.com/" target="_blank">SyncroSim</a> package, such that the output from one model can be used as the input for the next model. For more information, see the <a href="http://docs.syncrosim.com/how_to_guides/package_create_pipelines.html" target="_blank">Enhancing a Package</a> tutorial in the SyncroSim documentation or the <a href="https://apexrms.github.io/helloworldEnhanced/" target="_blank">helloworldEnhanced website</a>. 
