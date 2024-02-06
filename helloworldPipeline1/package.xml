@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package name="helloworldPipeline1" displayName="Hello World Step 1" description="Example demonstrating how to use pipelines" version="1.0.0" url="https://apexrms.github.io/helloworldEnhanced/">
+
+	<dataSheet name="RunControl" displayName="Run Control" isRunControl="True" timestepTitle="Timestep" showMinIteration="False">
+	</dataSheet>
+
+	<dataSheet name="InputDatasheet" isSingleRow="True">
+		<column name="mMean" dataType="Double" displayName="Slope Distribution Mean"/>
+		<column name="mSD" dataType="Double" displayName="Slope Distribution Standard Deviation"/>
+		<column name="b" dataType="Integer" displayName="Value for b"/>
+	</dataSheet>
+
+	<dataSheet name="IntermediateDatasheet" hasIteration="True" hasTimestep="True">
+		<column name="y" dataType="Double" displayName="Value for y"/>
+	</dataSheet>
+
+	<transformer name="Main" displayName="Hello World Step 1" programName="Rscript" programArguments="model.R">
+		<dataSheet name="RunControl" type="Input"/>
+		<dataSheet name="InputDatasheet" type="Input"/>
+		<dataSheet name="IntermediateDatasheet" type="Output"/>
+	</transformer>
+
+	<layout type="Scenario">
+		<item name="RunControl"/>
+		<item name="InputDatasheet"/>
+		<item name="IntermediateDatasheet"/>
+	</layout>
+
+	<layout type="Chart">
+		<item name="y" displayName="y" dataSheet="IntermediateDatasheet" column="y"/>
+	</layout>
+
+</package>
