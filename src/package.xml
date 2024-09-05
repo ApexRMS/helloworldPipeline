@@ -26,14 +26,14 @@
 	<!--Transformers-->
 
 	<!--First Transformer-->
-	<transformer name="firstModel" displayName="First Model" isRunnable="True" programName="Rscript" programArguments="model.R" configurationSheet="RunControl">
+	<transformer name="firstModel" displayName="First Model" isRunnable="True" programName="Rscript" programArguments="model.R">
 		<dataSheet name="RunControl" type="Input"/>
 		<dataSheet name="InputDataSheet" type="Input"/>
 		<dataSheet name="IntermediateDataSheet" type="Output"/>
 	</transformer>
 
 	<!--Second Transformer-->
-	<transformer name="secondModel" displayName="Second Model" isRunnable="True" programName="Rscript" programArguments="model2.R" configurationSheet="RunControl">
+	<transformer name="secondModel" displayName="Second Model" isRunnable="True" programName="Rscript" programArguments="model2.R">
 		<dataSheet name="RunControl" type="Input"/>
 		<dataSheet name="IntermediateDataSheet" type="Input"/>
 		<dataSheet name="OutputDataSheet" type="Output"/>
