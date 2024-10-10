@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package name="helloworldPipeline1" displayName="Hello World Step 1" description="Example demonstrating how to use pipelines" version="1.0.0" url="https://apexrms.github.io/helloworldEnhanced/">
+<package name="helloworldPipeline1" displayName="Hello World Step 1" description="Example demonstrating how to use pipelines" version="2.0.0" url="https://apexrms.github.io/helloworldEnhanced/">
 
 	<dataSheet name="RunControl" displayName="Run Control" isRunControl="True" timestepTitle="Timestep" showMinIteration="False">
 	</dataSheet>
