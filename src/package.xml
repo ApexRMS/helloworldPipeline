@@ -26,14 +26,14 @@
 	<!--Transformers-->
 
 	<!--First Transformer-->
-	<transformer name="firstModel" displayName="First Model" isRunnable="True" programArguments="model.R">
+	<transformer name="firstModel" displayName="First Model" isRunnable="True" programArguments="model.R" condaEnv="helloworldR.yml" condaEnvVersion="1">
 		<dataSheet name="RunControl" type="Input"/>
 		<dataSheet name="InputDataSheet" type="Input"/>
 		<dataSheet name="IntermediateDataSheet" type="Output"/>
 	</transformer>
 
 	<!--Second Transformer-->
-	<transformer name="secondModel" displayName="Second Model" isRunnable="True" programArguments="model2.R">
+	<transformer name="secondModel" displayName="Second Model" isRunnable="True" programArguments="model2.R" condaEnv="helloworldR.yml" condaEnvVersion="1">
 		<dataSheet name="RunControl" type="Input"/>
 		<dataSheet name="IntermediateDataSheet" type="Input"/>
 		<dataSheet name="OutputDataSheet" type="Output"/>
