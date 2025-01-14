@@ -14,7 +14,7 @@
 		<column name="y" dataType="Double" displayName="Value for y"/>
 	</dataSheet>
 
-	<transformer name="Main" displayName="Hello World Step 1" programName="Rscript" programArguments="model.R">
+	<transformer name="Main" displayName="Hello World Step 1" programName="Rscript" programArguments="model.R" condaEnv="helloworld.yml" condaEnvVersion="1">
 		<dataSheet name="RunControl" type="Input"/>
 		<dataSheet name="InputDatasheet" type="Input"/>
 		<dataSheet name="IntermediateDatasheet" type="Output"/>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package name="helloworldPipeline2" displayName="Hello World Step 2" description="Example demonstrating how to use pipelines" version="2.0.0" url="https://apexrms.github.io/helloworldEnhanced/">
 
-	<requiresPackage name="helloworldPipeline1"/>
+	<builtFor package="helloworldPipeline1" version="1.0.0"/>
 
 	<dataSheet name="OutputDatasheet" displayName="Outputs" hasIteration="True" hasTimestep="True">
 		<column name="yCum" dataType="Double" displayName="Cumulative y"/>
 	</dataSheet>
 
-	<transformer name="Main" displayName="Hello World Step 2" programName="Rscript" programArguments="model2.R">
+	<transformer name="Main" displayName="Hello World Step 2" programName="Rscript" programArguments="model2.R" condaEnv="helloworld.yml" condaEnvVersion="1" condaEnvPackage="helloworldPipeline1">
 		<dataSheet name="helloworldPipeline1_RunControl" type="Input"/>
 		<dataSheet name="helloworldPipeline1_IntermediateDatasheet" type="Input"/>
 		<dataSheet name="OutputDatasheet" type="Output"/>
