@@ -41,5 +41,5 @@ vignettes/*.pdf
 # Visual studio
 *.vs/
 
-# 
+# SyncroSim packages
 *.ssimpkg
