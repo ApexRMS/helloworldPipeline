@@ -26,24 +26,24 @@
 	<transformer name="firstModel" displayName="Hello World Pipeline 1 (R)" programArguments="model.R" isStochasticTime="True"
 	condaEnv="helloworldR.yml" condaEnvVersion="3">
 		<dataSheet name="RunControl" type="Input"/>
-		<dataSheet name="InputDataSheet" type="Input"/>
-		<dataSheet name="IntermediateDataSheet" type="Output"/>
+		<dataSheet name="InputDatasheet" type="Input"/>
+		<dataSheet name="IntermediateDatasheet" type="Output"/>
 	</transformer>
 
 	<!--Second Transformer-->
 	<transformer name="secondModel" displayName="Hello World Pipeline 2 (R)" programArguments="model2.R" isStochasticTime="True"
 	condaEnv="helloworldR.yml" condaEnvVersion="3">
 		<dataSheet name="RunControl" type="Input"/>
-		<dataSheet name="IntermediateDataSheet" type="Input"/>
-		<dataSheet name="OutputDataSheet" type="Output"/>
+		<dataSheet name="IntermediateDatasheet" type="Input"/>
+		<dataSheet name="OutputDatasheet" type="Output"/>
 	</transformer>
 
 	<!--Scenario Datafeeds Layout-->
 	<layout type = "Scenario">
 		<item name="RunControl"/>
-		<item name="InputDataSheet"/>
-		<item name="IntermediateDataSheet"/>
-		<item name="OutputDataSheet"/>
+		<item name="InputDatasheet"/>
+		<item name="IntermediateDatasheet"/>
+		<item name="OutputDatasheet"/>
 	</layout>
 
 	<!--Charts Layout-->
