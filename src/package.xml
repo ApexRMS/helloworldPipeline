@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package name="helloworldPipeline" displayName= "Hello World Pipeline (R)" description = "Example demonstrating how to use pipelines with an R model" version="2.1.1" url="https://apexrms.github.io/helloworldEnhanced/" minSyncroSimVersion="3.1.0">
+<package name="helloworldPipeline" displayName= "Hello World Pipeline (R)" description = "Example demonstrating how to use pipelines with an R model" version="2.1.2" url="https://apexrms.github.io/helloworldEnhanced/" minSyncroSimVersion="3.1.0">
 	<!--Scenario Datasheets-->
 
 	<!--Run Control-->
